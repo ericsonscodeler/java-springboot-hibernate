@@ -1,0 +1,17 @@
+br\fai\sr\Repository\UsuarioRepository.class
+br\fai\sr\Entity\Anuncio.class
+br\fai\sr\SrApplication.class
+br\fai\sr\InterfaceController\IController.class
+br\fai\sr\Controller\UsuarioController.class
+br\fai\sr\Entity\Chat.class
+br\fai\sr\Entity\Servico.class
+br\fai\sr\Entity\Mensagem.class
+br\fai\sr\Entity\Usuario.class
+br\fai\sr\Repository\SolicitaRepository.class
+br\fai\sr\Entity\Solicita.class
+br\fai\sr\Repository\ServicoRepository.class
+br\fai\sr\Controller\AnuncioController.class
+br\fai\sr\Repository\MensagemRepository.class
+br\fai\sr\Controller\MensagemController.class
+br\fai\sr\Repository\AnuncioRepository.class
+br\fai\sr\InterfaceController\IBaseEntity.class
