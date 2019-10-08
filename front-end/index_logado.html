@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Serviços Rapido</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilo/estilo_index.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body id="myPage" >
+<!-- barra de navegação -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+			
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="index_logado.html">INÍCIO</a></li>
+				<li><a href="#services">CATEGORIAS DE SERVIÇO</a></li>
+				<li><a href="criar_anuncio.html">CRIAR ANÚNCIO</a></li>
+				<li><a href="meus_anuncios.html">MEUS ANÚNCIOS</a></li>
+				<li><a href="chat.html"><span class="glyphicon glyphicon-comment"></span>CHAT</a></li>
+				
+				
+			  
+			  </ul>
+			</div>
+		  </div>
+	</nav>
+
+<!-- titulo -->
+<div class="jumbotron text-center">
+  <img  width="40%" height="30%" class="center-block" src="img/logo.jpg" alt="Chania">
+  <p>Encontre o serviço que você precisa em poucos minutos</p> 
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Qual serviço você procura?" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger" id="pesquisar"><span class="glyphicon glyphicon-search"></span></button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+<!-- Tipos de serviço -->
+<div id="services" class="container-fluid text-center">
+  <h2>CATEGORIAS DE SERVIÇOS</h2>
+  <h4>Qual tipo de serviço você procura?</h4>
+	<div class="container">
+	
+
+		<a href="resultados.html"><button type="button" class="btn btn-warning"style="width:200px; height:100px;">Saúde</button></a>
+		<a href="resultados.html"><button type="button" class="btn btn-warning"style="width:200px; height:100px;">Mecânica</button></a>
+		<a href="resultados.html"><button type="button" class="btn btn-warning"style="width:200px; height:100px;">Elétrica</button></a>
+		<a href="resultados.html"><button type="button" class="btn btn-warning"style="width:200px; height:100px;">Design e Tecnologia</button></a>
+		<a href="resultados.html"><button type="button" class="btn btn-warning"style="width:200px; height:100px;">Estética</button></a>
+		<br />
+		<br />
+		<a href="resultados.html"><button type="button" class="btn btn-warning"style="width:200px; height:100px;">Aulas particulares</button></a>
+		<a href="resultados.html"><button type="button" class="btn btn-warning"style="width:200px; height:100px;">Eventos</button></a>
+		<a href="resultados.html"><button type="button" class="btn btn-warning"style="width:200px; height:100px;">Construção e reforma</button></a>
+		<a href="resultados.html"><button type="button" class="btn btn-warning"style="width:200px; height:100px;">Consultoria</button></a>
+		<a href="resultados.html"><button type="button" class="btn btn-warning"style="width:200px; height:100px;">Serviços Domesticos</button></a>
+
+   </div>
+
+<br />
+<!-- Anúncios mais recentes -->
+<div id="section" class="container-fluid text-center bg-grey">
+  
+  
+  <h2>Anúncios mais recentes </h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>Serviço1<br><span>Elétrica</span></h4>
+		 <a href="anuncio.html"><img  width="40%" height="30%" class="center-block" src="img/serviço.png" alt="Chania"></a>
+		
+      </div>
+      <div class="item">
+        <h4>Serviço2<br><span>Saúde</span></h4>
+		<a href="anuncio.html"><img  width="40%" height="30%" class="center-block" src="img/saude.jpg" alt="Chania"></a>
+		
+      </div>
+	  <div class="item">
+        <h4>Serviço3<br><span>Estética</span></h4>
+		<a href="anuncio.html"><img  width="40%" height="30%" class="center-block" src="img/estetica.jpg" alt="Chania"></a>
+		
+      </div>
+	  
+    </div>
+	
+	
+	
+	
+	
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+  <br/>
+  <br/>
+  <hr/>
+  <br/>
+  <br/>
+  <!-- Serviços mais buscados -->
+   
+<div class="container">
+  <h2>Serviços mais buscados</h2>  
+  <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel1" data-slide-to="1"></li>
+      <li data-target="#myCarousel1" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+		<h4>Serviço1<br><span>Design e Tecnologia</span></h4>
+        <a href="anuncio.html"><img  width="40%" height="30%" class="center-block" src="img/design.jpg" alt="Chania"></a>
+      </div>
+
+      <div class="item">
+	   <h4>Serviço2<br><span>Consultoria</span></h4>
+       <a href="anuncio.html"><img  width="40%" height="30%" class="center-block" src="img/consultoria.jpg" alt="Chania"></a>
+      </div>
+    
+      <div class="item">
+		<h4>Serviço3<br><span>Mecânica</span></h4>
+	    <a href="anuncio.html"><img  width="40%" height="30%" class="center-block" src="img/mecanica.jpg" alt="Chania"></a>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+</div>
+ 
+
+
+
+<br/>
+<br/>
+<!-- footer -->
+<footer class="container-fluid text-center">
+	<hr/>
+	<div class="row">
+	
+  <div class="col-sm-4">
+	<a href="facebook.com"><img src="img/facebook.png" width="30px" height="20px" style="padding-right:10px"/></a>
+	<a href="www.twitter.com"><img src="img/twitter.png" width="30px" height="20px" style="padding-right:10px"/></a>
+	<a href="www.instagram.com"><img src="img/instagram.png" width="30px" height="20px" style="padding-right:10px"/></a>
+  </div>
+	  <div class="col-sm-8"><ul class="list-inline">
+		<li><a class="lista_footer" href="pagina_footer/sobre.html">Sobre a Serviços Rápido</a></li>
+		<li><a class="lista_footer" href="pagina_footer/ajuda.html">Ajuda</a></li>
+		<li><a class="lista_footer" href="pagina_footer/termos.html">Termos e condições</a></li>
+		<li><a class="lista_footer" href="pagina_footer/privacidade.html">Políticas de privacidade</a></li>
+	</ul>
+   </div>
+</div>
+<hr/>
+   <ul class="list-inline">
+		<li><span class="glyphicon glyphicon-map-marker"></span>Santa Rita Do Sapucaí, MG</li>
+		<li><span class="glyphicon glyphicon-phone"></span>35997378644</li>
+		<li><span class="glyphicon glyphicon-envelope"></span> servicos.rapidos@hotmail.com</li>
+  
+	</ul>
+	
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

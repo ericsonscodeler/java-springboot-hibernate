@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Serviços Rapido</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="estilo/estilo_login.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body id="myPage">
+	<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav navbar-right">
+			<li><img src="img/logo2.jpg" height="45px"/></li>
+		</ul>
+	  </div>
+	</div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">INÍCIO</a></li>
+        <li><a href="tipos_servico.html">CATEGORIAS DE SERVIÇOS</a></li>
+        <li><a href="registrar.html">CRIAR CONTA</a></li>
+       </ul>
+    </div>
+	</div>
+	</nav>
+	<form action="/action_page.php">
+	<div id="areaLogin"  class="w-auto p-3" class="h-auto p-3" class="center-block">
+		<h1 style="text-align:center; color:white">Acesse sua conta</h1>
+		<div class="form-group">
+		<br/>
+		<br/>
+		<label style="color:white;position:absolute;left:3%"  for="email">Email:</label>
+			<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Preencha com seu EMAIL" class="form" required="required" maxlength="35" id="email">
+		</div>
+		<div class="form-group">
+			<label style="color:white;position:absolute;left:3%" for="pwd">Senha:</label>
+			<input type="password" pattern="[a-zA-Z0-9._%+-]+[a-z0-9.-]" title="Preencha com sua senha, somente é permitido letras e números" required="required" class="form" maxlength="12" minleght="6" name="senha" id="pwd">
+		</div>
+		<div class="checkbox">
+			<label style="color:white" class="form" ><input  type="checkbox">lembrar-me</label>
+		</div>
+		<button type="submit" style="position:relative;width:30%;left:35%" class="btn btn-warning">Entrar</button>
+		<a href="registrar.html"><h5 style="text-align:center; color:white">cadastre-se</h4></a>
+		<a><h5 style="text-align:center; color:white">Esqueceu sua senha?</h4></a>
+	</div>
+	</form>
+
+
+<footer class="container-fluid text-center">
+	<hr/>
+	<div class="row">
+	
+  <div class="col-sm-4">
+	<a src="facebook.com"><img src="img/facebook.png" width="30px" height="20px" style="padding-right:10px"/></a>
+	<a src="www.twitter.com"><img src="img/twitter.png" width="30px" height="20px" style="padding-right:10px"/></a>
+	<a src="www.instagram.com"><img src="img/instagram.png" width="30px" height="20px" style="padding-right:10px"/></a>
+  </div>
+  <div class="col-sm-8"><ul class="list-inline">
+	<li><a class="lista_footer" href="pagina_footer/sobre.html">Sobre a Serviços Rápido</a></li>
+	<li><a class="lista_footer" href="pagina_footer/ajuda.html">Ajuda</a></li>
+	<li><a class="lista_footer" href="pagina_footer/termos.html">Termos e condições</a></li>
+	<li><a class="lista_footer" href="pagina_footer/privacidade.html">Políticas de privacidade</a></li>
+	
+	</ul></div>
+</div>
+<hr/>
+   <ul class="list-inline">
+	<li><span class="glyphicon glyphicon-map-marker"></span>Santa Rita Do Sapucaí, MG</li>
+	<li><span class="glyphicon glyphicon-phone"></span>35997378644</li>
+	<li><span class="glyphicon glyphicon-envelope"></span> servicos.rapidos@hotmail.com</li>
+  
+	</ul>
+	
+</footer>
+
+<script>
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
